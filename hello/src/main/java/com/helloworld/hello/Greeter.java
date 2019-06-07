@@ -1,8 +1,10 @@
 package com.helloworld.hello;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component("Forwards")
+@Component
+@Primary
 public class Greeter implements Greet{
 
     /**

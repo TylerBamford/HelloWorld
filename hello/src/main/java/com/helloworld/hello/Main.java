@@ -8,9 +8,10 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class Main {
 
     public static void main(String[] args) {
+        SpringApplication.run(Main.class, args);
         ConfigurableApplicationContext context = SpringApplication.run(Main.class, args);
         HelloWorld hello = context.getBean(HelloWorld.class);
-        hello.print();
+        System.out.println(hello.print());
 	}
 
 }

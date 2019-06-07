@@ -2,7 +2,8 @@ package com.helloworld.hello;
 
 import org.springframework.stereotype.Component;
 
-@Component("Backwards")
+@Component
+//@Primary
 public class SecondGreeter implements Greet{
 
     /**
